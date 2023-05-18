@@ -35,10 +35,6 @@ function getBotResponse(input) {
     return "Hello there!";
   } else if (input === "goodbye") {
     return "Talk to you later!";
-  }
-
-  if (input.includes("sport")) {
-    return fetchingchatbot("sport");
   } else if (input.includes("action")) {
     return fetchingchatbot("action");
   } else if (input.includes("shooter")) {
@@ -73,7 +69,10 @@ function getBotResponse(input) {
     return fetchingchatbot("horror");
   } else if (input.includes("role playing")) {
     return fetchingchatbot("role playing");
-  } 
+  } else if (input.includes("sport")) {
+    return fetchingchatbot("sport");
+  }
+  
 
   return "I'm sorry, I didn't understand that.";
 }
