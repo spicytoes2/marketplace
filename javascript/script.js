@@ -1,10 +1,9 @@
-const base_url = "https://db1087.brighton.domains/gp/api.php";
-const option = "cb_tag";
-
 function fetchingchatbot(tag){
-    const url = `${base_url}?option=${option}&tags=${tag}`;
+    const base_url1 = "https://db1087.brighton.domains/gp/api.php";
+    const option1 = "cb_tag";
+    const url1 = `${base_url1}?option=${option1}&tags=${tag}`;
 
-    return fetch(url)
+    return fetch(url1)
         .then(response => {
             if(response.ok){
                 return response.json();
