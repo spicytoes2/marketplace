@@ -1,7 +1,7 @@
 const base_url = "https://db1087.brighton.domains/gp/api.php";
 const option = "cb_tag";
 
-function fetching(tag){
+function fetchingchatbot(tag){
     const url = `${base_url}?option=${option}&tags=${tag}`;
 
     return fetch(url)
@@ -39,41 +39,41 @@ function getBotResponse(input) {
   }
 
   if (input.includes("sport")) {
-    return fetching("sport");
+    return fetchingchatbot("sport");
   } else if (input.includes("action")) {
-    return fetching("action");
+    return fetchingchatbot("action");
   } else if (input.includes("shooter")) {
-    return fetching("shooter");
+    return fetchingchatbot("shooter");
   } else if (input.includes("open world")) {
-    return fetching("open world");
+    return fetchingchatbot("open world");
   } else if (input.includes("story")) {
-    return fetching("story");
+    return fetchingchatbot("story");
   } else if (input.includes("sci-fi")) {
-    return fetching("sci fi");
+    return fetchingchatbot("sci fi");
   } else if (input.includes("entertainment")) {
-    return fetching("entertainment");
+    return fetchingchatbot("entertainment");
   } else if (input.includes("driving")) {
-    return fetching("driving");
+    return fetchingchatbot("driving");
   } else if (input.includes("multiplayer")) {
-    return fetching("multiplayer");
+    return fetchingchatbot("multiplayer");
   } else if (input.includes("adventure")) {
-    return fetching("adventure");
+    return fetchingchatbot("adventure");
   } else if (input.includes("strategy")) {
-    return fetching("strategy");
+    return fetchingchatbot("strategy");
   } else if (input.includes("online")) {
-    return fetching("online");
+    return fetchingchatbot("online");
   } else if (input.includes("fighting")) {
-    return fetching("fighting");
+    return fetchingchatbot("fighting");
   } else if (input.includes("first person")) {
-    return fetching("first person");
+    return fetchingchatbot("first person");
   } else if (input.includes("third person")) {
-    return fetching("third person");
+    return fetchingchatbot("third person");
   } else if (input.includes("stealth")) {
-    return fetching("stealth");
+    return fetchingchatbot("stealth");
   } else if (input.includes("horror")) {
-    return fetching("horror");
+    return fetchingchatbot("horror");
   } else if (input.includes("role playing")) {
-    return fetching("role playing");
+    return fetchingchatbot("role playing");
   } 
 
   return "I'm sorry, I didn't understand that.";
